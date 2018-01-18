@@ -2,4 +2,4 @@
 
 Web repo for class assignments.
 
-Celeste Lim
+Celeste Lim - celestelim95@miami.edu
