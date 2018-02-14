@@ -1,5 +1,5 @@
 body {
-  background: ;
+  background: white;
 }
 
 
@@ -11,26 +11,38 @@ a{
 a:hover {
   color: blue;
   text-decoration: underline;
+  font-size: 30px;
 }
 
 a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .company {
-  color: green;
+  color: #12A131;
   font-weight: bold;
-  font-size
 }
 
 .school {
   color: orange;
 }
 
+.organization {
+  color: #336FFF;
+}
+
+.title {
+  color: #EB00A7;
+}
+
+.category {
+  color: #00AE7D;
+}
+
 #name {
-  color: purple;
+  color: blue;
 }
 
 #address {
-  color: 
+  color: #4E01B4;
 }
