@@ -1,3 +1,54 @@
 body {
   background: teal;
 }
+
+.wrapper * {
+  background: #ffcc00;
+  padding: 10px;
+}
+
+.main-head {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  background-image: url(cover.jpg);
+  background-size: cover;
+}
+
+.content {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  height: 500px;
+  background-position: center center;
+
+}
+
+
+
+.main-nav {
+  grid-area: nav;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+
+/* Mobile Layout */
+
+
+
+
+/* tablet layout */
+
+@media (min-width: 500px) {
+
+
+
+
+/* Desktop layout */
+
+
+@media (min-width: 700px) {
