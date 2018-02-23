@@ -1,11 +1,9 @@
-body {
-  background: teal;
-}
-
-.wrapper * {
-  background: #ffcc00;
-  padding: 10px;
-}
+/* .container {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  }
 
 .main-head {
   grid-area: header;
@@ -13,19 +11,7 @@ body {
 
 .content {
   grid-area: content;
-  background-image: url(cover.jpg);
-  background-size: cover;
 }
-
-.content {
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  height: 500px;
-  background-position: center center;
-
-}
-
-
 
 .main-nav {
   grid-area: nav;
@@ -33,22 +19,102 @@ body {
 
 .main-footer {
   grid-area: footer;
-}
+} */
 
 
 /* Mobile Layout */
 
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "nav"
+    "content"
+    "main-head"
+    "main-footer";
+}
 
+.main-head {
+  color: black;
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
 
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav ul li {
+  background: blue;
+  width: 100%;
+  margin-left: -10px;
+  margin-bottom: 2px;
+  border: 1px solid black;
+}
+
+.main-nav ul li a {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.main-nav ul li.active {
+  background: orange;
+  font: strong;
+}
+
+.main-nav ul li.hover {
+  background: pink;
+}
+
+.main-nav ul li.hover a {
+  color: orange;
+}
+
+.content {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  height: 550px;
+  background-position: center center;
+  }
 
 /* tablet layout */
 
 @media (min-width: 500px) {
-
-
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "main-head"
+      "content"
+      "main-footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 
 /* Desktop layout */
 
 
-@media (min-width: 700px) {
+  @media (min-width: 700px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "nav"
+        "main-head"
+        "content"
+        "main-footer";
+     }
+     nav ul {
+       flex-direction: column;
+     }
+   }
