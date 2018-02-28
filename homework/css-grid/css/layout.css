@@ -60,11 +60,11 @@
   background: purple;
 }
 
-.main-nav ul li.hover {
+.main-nav ul li:hover {
   background: pink;
 }
 
-.main-nav ul li.hover a {
+.main-nav ul li:hover a {
   color: purple;
 }
 
