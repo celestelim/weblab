@@ -30,10 +30,10 @@
 .left {
   padding: 30px;
   grid-area: left;
-  /* background: green; */
-  border-style: solid;
+  background: green;
+  /* border-style: solid;
   border-color: #404040;
-  border-width: thin;
+  border-width: thin; */
 }
 
 .right {
@@ -57,7 +57,8 @@
 
 .self-portrait {
   display: block;
-    width: 100%;
+  width: 100%;
+
 }
 
 .bio-head {
@@ -83,6 +84,7 @@
   letter-spacing: 2px;
   margin-bottom: 2px;
   text-align: center;
+  padding: 32px;
 
 }
 
@@ -134,6 +136,7 @@
   height: 20px;
   /* position: fixed; */
   left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
   color: #404040;
@@ -141,6 +144,29 @@
   text-align: center;
 }
 
+
+/* Portfolio page */
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* .column:hover {
+
+} */
 
 
 /* tablet layout */
@@ -166,6 +192,12 @@
     justify-content: space-between;
   }
 }
+
+.column {
+     flex: 50%;
+     max-width: 50%;
+ }
+
 
 
 /* Desktop layout */
@@ -193,3 +225,8 @@
        justify-content: space-between;
      }
    }
+
+   .column {
+    flex: 25%;
+    max-width: 25%;
+}
