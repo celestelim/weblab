@@ -30,7 +30,7 @@
 .left {
   padding: 30px;
   grid-area: left;
-  background: green;
+  /* background: green; */
   /* border-style: solid;
   border-color: #404040;
   border-width: thin; */
@@ -38,7 +38,7 @@
 
 .right {
   grid-area: right;
-  background: teal;
+  /* background: teal; */
 }
 
 .bottom {
@@ -56,25 +56,31 @@
 }
 
 .self-portrait {
-  display: block;
-  width: 100%;
+  width: 300px;
+  padding: 30px;
 
 }
 
 .bio-head {
   font-family: 'Josefin Sans', sans-serif;
+  width: 300px;
+  float: center;
 }
 
 .bio-description {
   font-family: 'Crimson Text', serif;
+  width: 300px;
+  float: center;
 }
 
 .contact-head {
   font-family: 'Josefin Sans', sans-serif;
+  padding-left: 30px;
 }
 
 .contact-info {
-  font-family: 'Crimson Text', serif
+  font-family: 'Crimson Text', serif;
+  padding-left: 30px;
 }
 
 .main-head {
@@ -148,26 +154,26 @@
 /* Portfolio page */
 
 
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
     padding: 4px;
-}
+} */
 
 .column {
-    flex: 100%;
-    max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 10px;
+  align-items: center;
+  grid-gap: 30px;
   }
 
 .column img {
-    margin-top: 8px;
     vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
-
-/* .column:hover {
-
-} */
-
 
 /* tablet layout */
 
@@ -181,8 +187,13 @@
       "main-footer";
   }
 
+  .column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
   .content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "left right"
       "bottom bottom";
@@ -192,11 +203,6 @@
     justify-content: space-between;
   }
 }
-
-.column {
-     flex: 50%;
-     max-width: 50%;
- }
 
 
 
@@ -214,7 +220,7 @@
      }
 
      .content {
-       grid-template-columns: 2fr 1fr;
+       grid-template-columns: 1fr 1fr;
        grid-template-areas:
          "left right"
          "bottom bottom";
@@ -227,6 +233,7 @@
    }
 
    .column {
-    flex: 25%;
-    max-width: 25%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     align-items: center;
 }
