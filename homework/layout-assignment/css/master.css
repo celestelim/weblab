@@ -64,13 +64,11 @@
 .bio-head {
   font-family: 'Josefin Sans', sans-serif;
   width: 300px;
-  float: center;
 }
 
 .bio-description {
   font-family: 'Crimson Text', serif;
   width: 300px;
-  float: center;
 }
 
 .contact-head {
@@ -102,7 +100,6 @@
   color: 	#404040;
   float: right;
   text-align: center;
-  /* display: inline; */
 
 }
 
@@ -112,7 +109,6 @@
   border: 1px solid #404040;
   border-width: inherit;
   text-align: center;
-  /* display: inline; */
 }
 
 .main-nav ul li a {
@@ -122,7 +118,6 @@
 
 .main-nav ul li.active {
   text-decoration: underline;
-  text-decoration: bold;
 }
 
 .main-nav ul li a:hover {
@@ -140,7 +135,6 @@
   background-color: #ffdd99;
   width: auto;
   height: 20px;
-  /* position: fixed; */
   left: 0;
   right: 0;
   bottom: 0;
@@ -153,12 +147,6 @@
 
 /* Portfolio page */
 
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-} */
 
 .column {
   display: grid;
@@ -174,6 +162,7 @@
     width: 100%;
     height: auto;
 }
+
 
 /* tablet layout */
 
@@ -224,16 +213,14 @@
        grid-template-areas:
          "left right"
          "bottom bottom";
-
-     nav ul {
-       /* flex-direction: column; */
-       display: flex;
-       justify-content: space-between;
-     }
-   }
+}
 
    .column {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      align-items: center;
+}
+
+.column img:hover {
+  transform: scale(1.5);
 }
