@@ -175,7 +175,7 @@
       "cover-pic"
       "main-footer";
   }
-
+}
   .column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,7 +191,6 @@
     display: flex;
     justify-content: space-between;
   }
-}
 
 
 
@@ -207,7 +206,7 @@
         "cover-pic"
         "main-footer";
      }
-
+}
      .content {
        grid-template-columns: 1fr 1fr;
        grid-template-areas:
@@ -219,8 +218,4 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      align-items: center;
-}
-
-.column img:hover {
-  transform: scale(1.5);
 }
