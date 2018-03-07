@@ -62,30 +62,30 @@
 }
 
 .bio-head {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   width: 300px;
 }
 
 .bio-description {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Open Sans', sans-serif;
   width: 300px;
 }
 
 .contact-head {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding-left: 30px;
 }
 
 .contact-info {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Open Sans', sans-serif;
   padding-left: 30px;
 }
 
 .main-head {
   color: 	#404040;
-  font-size: 40px;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 2px;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
   margin-bottom: 2px;
   text-align: center;
   padding: 32px;
@@ -125,10 +125,17 @@
 }
 
 .cover-pic {
-  background-image: url(../images/cover-2.jpg);
+  background-image: url(../images/cover-2-export.jpg);
   background-size: cover;
   height: 550px;
   background-position: center center;
+  font-size: 50px;
+  color: 	#404040;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 2px;
+  text-align: center;
+  padding: 32px;
   }
 
 .main-footer {
@@ -175,7 +182,7 @@
       "cover-pic"
       "main-footer";
   }
-}
+
   .column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,7 +198,7 @@
     display: flex;
     justify-content: space-between;
   }
-
+}
 
 
 /* Desktop layout */
@@ -206,7 +213,7 @@
         "cover-pic"
         "main-footer";
      }
-}
+
      .content {
        grid-template-columns: 1fr 1fr;
        grid-template-areas:
@@ -218,4 +225,5 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      align-items: center;
+}
 }
