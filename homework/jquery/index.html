@@ -8,64 +8,104 @@
   </head>
   <body>
 
-    <div class="box story">
-      <h1 id="title">My Hurricane Irma Break</h1>
-      <img src="images/alert.png" alt="alert" id="alert" class="alert">
-      <div id="caption">This series of events started after a series of storm alerts was issued by the University to evacuate the area...</div>
-    </div>
+    <div class="box story wrapper">
+      <header class="main-head">My Hurricane Irma Break</header>
+      <nav class="main-nav">
+          <ul>
+              <li class="part1"><a href="#" id="part1">Part 1</a></li>
+              <li class="part2"><a href="#" id="part2">Part 2</a></li>
+              <li class="part3"><a href="#" id="part3">Part 3</a></li>
+              <li class="part4"><a href="#" id="part4">Part 4</a></li>
+              <li class="part5"><a href="#" id="part5">Part 5</a></li>
+              <li class="part6"><a href="#" id="part6">Part 6</a></li>
+          </ul>
+      </nav>
 
-    <a href="#" id="part1">part 1<a>
-    <a href="#" id="part2">part 2<a>
-    <a href="#" id="part3">part 3<a>
-    <a href="#" id="part4">part 4<a>
-    <a href="#" id="part5">part 5<a>
-    <a href="#" id="part6">part 6<a>
+      <article id="story">
+          <h1>The Story</h1>
+          <p class="caption">This series of events started after a series of storm alerts was issued by the University to evacuate the area...</p>
+      </article>
+
+      <div class="image">
+        <img src="images/alert.jpg" alt="alert" id="image">
+      </div>
+
+      </div>
 
       <script type="text/javascript">
       $(document).ready(function(){
 
           // $(".box").css("background-color", "blue");
           $("#part1").click( function() {
-            $(".box").removeClass( "box-big" );
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "Booked flight to Houston (all good) packed and drove up to Orlando International Airport with our other friends to fly off to Houston. Also got this dope free car upgrade at the car rental center.");
-            $("#alert").attr("src","images/car.JPG");
+            $(".part2").removeClass("active");
+            $(".part3").removeClass("active");
+            $(".part4").removeClass("active");
+            $(".part5").removeClass("active");
+            $(".part6").removeClass("active");
+            $(".part1").addClass("active");
+            $(".caption").html( "Booked flight to Houston, packed and drove up to Orlando International Airport with our other friends to fly off to Houston. Also got this dope free car upgrade at the car rental center. Everything started off really well, or so we thought...");
+            // $("#image").attr("src","images/car.JPG");
+            $(".image").html('<img src="images/car.jpg" alt="car" id="image">');
           })
 
           $("#part2").click( function() {
-            $(".box").removeClass( "box-big" );
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "Gas was sold out everywhere and for the few places it was available there were massive lines. We were glad to be able to leave the State. A litlle later, I tried to check-in for our flight and I realized that I had booked it for the wrong dates.");
-            $("#alert").attr("src","images/car.JPG");
+            $(".part1").removeClass("active");
+            $(".part3").removeClass("active");
+            $(".part4").removeClass("active");
+            $(".part5").removeClass("active");
+            $(".part6").removeClass("active");
+            $(".part2").addClass("active");
+            $(".caption").html( "Gas was sold out everywhere and for the few places it was available there were massive lines. We were glad to be able to leave the State. A little later, I tried to check-in for our flight and I realized that I had booked it for the wrong dates.");
+            $(".image").html('<img src="images/flight.jpg" alt="flight" id="image">');
           })
 
           $("#part3").click( function() {
-            $(".box").fadeOut(1000);
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "Desperately tried looking for flights to literally anywhere that were reasonably affordable but everything was sold out. We were freaking out and I told my mom and she reached out to a family friend that was living in Orlando and they kindly let us stay with her and her family.");
-            $("#alert").attr("src","images/car.JPG");
+            // $(".box").fadeOut(1000);
+            $(".part1").removeClass("active");
+            $(".part2").removeClass("active");
+            $(".part4").removeClass("active");
+            $(".part5").removeClass("active");
+            $(".part6").removeClass("active");
+            $(".part3").addClass("active");
+            $(".caption").html( "Desperately tried looking for flights to literally anywhere that were reasonably affordable, but everything was sold out. We were freaking out and I told my mom and she reached out to a family friend that was living in Orlando and they kindly let us stay with her and her family.");
+            $(".image").html('<img src="images/kids.jpg" alt="kids" id="image"><img src="images/erin.jpg" alt="erin" id="image">');
 
           })
           // hide/show
           $("#part4").click( function() {
-            $(".box").fadeIn(10000);
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "Had to babysit their kids and also prepare for the hurricane. That included waking up early, making breakfast and entertaining the kids, as well as trips to Home Depot which was actually a crazy frenzy of desperate humans fighting for the plywood. We rode it out and lost power for a couple of days.");
-            $("#alert").attr("src","images/car.JPG");
+            // $(".box").fadeIn(10000);
+            $(".part1").removeClass("active");
+            $(".part2").removeClass("active");
+            $(".part3").removeClass("active");
+            $(".part5").removeClass("active");
+            $(".part6").removeClass("active");
+            $(".part4").addClass("active");
+            $(".caption").html( "Had to babysit their kids and also prepare for the hurricane. That included waking up early, making breakfast and entertaining the kids, as well as trips to Home Depot which was actually a crazy frenzy of desperate humans fighting for the plywood. We rode it out and lost power for a couple of days.");
+            $(".image").html('<img src="images/angels.jpg" alt="angels" id="image"><img src="images/erin.jpg" alt="erin" id="image">');
           })
 
           $("#part5").click( function() {
             $(".box").fadeIn(10000);
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "Finally things cleared up and we managed to take a bus back to Coral Springs where our roommates lived and they didn't even loose power. We managed to find super cheap tickets to LA and booked them last minute as school was still cancelled and pretty much everything around us was closed.");
-            $("#alert").attr("src","images/car.JPG");
+            $(".part1").removeClass("active");
+            $(".part2").removeClass("active");
+            $(".part3").removeClass("active");
+            $(".part4").removeClass("active");
+            $(".part6").removeClass("active");
+            $(".part5").addClass("active");
+            $(".caption").html( "Finally, things cleared up and we managed to take a bus back to Coral Springs where our roommates lived, and they didn't even loose power. We managed to find super cheap tickets to LA and booked them last minute as school was still cancelled and pretty much everything around us was closed.");
+            $("#image").attr("src","images/car.JPG");
           })
 
           $("#part6").click( function() {
             $(".box").fadeIn(10000);
-            $(".box").addClass( "box-part1" );
-            $("#caption").html( "We had the best time in LA and San Diego! I guess in the end it all worked out? You can decide.");
-            $("#alert").attr("src","images/car.JPG");
+            $(".part1").removeClass("active");
+            $(".part2").removeClass("active");
+            $(".part3").removeClass("active");
+            $(".part4").removeClass("active");
+            $(".part5").removeClass("active");
+            $(".part6").addClass("active");
+            $(".caption").html( "We had the best time in LA and San Diego! I guess in the end it all worked out? You can decide.");
+            $(".image").html('<img src="images/LA.jpg" alt="LA" id="image"><img src="images/ocean.jpg" alt="ocean" id="image"><img src="images/squad.jpg" alt="squad" id="image"><img src="images/squad2.jpg" alt="squad2" id="image">');
           })
 
         });
@@ -74,52 +114,3 @@
 
   </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jquery Demo</title>
-    <link rel="stylesheet" href="css/master.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-
-<div class="box">
-  My Box is cool!
-</div>
-
-<a href="#" id="sam">Click Sam!<a> | <a href="#" id="bob">Click Bob!</a> <br>
-<a href="#" id="jane">Hide</a> | <a href="#" id="mary">Show</a>
-<br><br>
-
-    <script type="text/javascript">
-    $(document).ready(function(){
-
-        // $(".box").css("background-color", "blue");
-        $("#sam").click( function() {
-          $(".box").removeClass( "box-big" );
-          $(".box").addClass( "box-big" );
-          $(".box").html( "Woohooo you clicked Sam!");
-        })
-
-        $("#bob").click( function() {
-          $(".box").removeClass( "box-big" );
-          $(".box").addClass( "box-big" );
-          $(".box").html( "Woohooo you clicked Bob!");
-        })
-
-        $("#jane").click( function() {
-          $(".box").fadeOut(1000);
-        })
-        // hide/show
-        $("#mary").click( function() {
-          $(".box").fadeIn(10000);
-        })
-
-      });
-
-    </script>
-  </body>
-</html> -->

@@ -1,4 +1,4 @@
-.box {
+/* .box {
   background-color: white;
   border-radius: 5px;
   border: 3px solid #000;
@@ -23,9 +23,110 @@
   color: black;
   font-size: 18px;
   image-orientation: right;
+} */
+
+/* take this out! */
+.box * {
+  background: #ffcc00;
+  padding: 10px;
 }
 
-.alert {
-  width: 200px;
-  padding: 20px;
+
+
+.main-head {
+  grid-area: header;
+}
+#story {
+  grid-area: story;
+}
+.main-nav {
+  grid-area: nav;
+}
+.image {
+  grid-area: image;
+}
+
+
+/* Mobile Layout */
+
+
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "story"
+    "image";
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.active {
+  background: purple;
+}
+
+.main-nav ul li {
+  background: green;
+  width: 100%;
+  margin-left: -10px;
+  margin-bottom: 2px;
+}
+
+.main-nav ul li a {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.main-nav ul li.active {
+  background: purple;
+}
+
+.main-nav ul li:hover {
+  background: pink;
+}
+
+.main-nav ul li:hover a {
+  color: purple;
+}
+
+
+/* tablet layout */
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     story"
+      "image   image";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/* Desktop layout */
+
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav   story story"
+      "nav   story story"
+      "image   image  image"
+   }
+   nav ul {
+     flex-direction: column;
+   }
 }
