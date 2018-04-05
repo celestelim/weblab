@@ -108,6 +108,7 @@ body {
   font-weight: 200;
   letter-spacing: 7px;
   text-align: center;
+  width: 100%;
 }
 
 .caption {
@@ -120,7 +121,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
+
 
 /* tablet layout */
 
