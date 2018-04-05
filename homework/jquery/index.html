@@ -9,7 +9,7 @@
   <body>
 
     <div class="box story wrapper">
-      <header class="main-head">My Hurricane Irma Break</header>
+      <header class="main-head">MY HURRICANE IRMA BREAK</header>
       <nav class="main-nav">
           <ul>
               <li class="part1"><a href="#" id="part1">Part 1</a></li>
@@ -22,7 +22,7 @@
       </nav>
 
       <article id="story">
-          <h1>The Story</h1>
+          <h1 class="title">THE STORY</h1>
           <p class="caption">This series of events started after a series of storm alerts was issued by the University to evacuate the area...</p>
       </article>
 
@@ -35,6 +35,13 @@
       <script type="text/javascript">
       $(document).ready(function(){
 
+        $(".caption").mouseover(function(){
+          $(".caption").css("color", "#fff");
+        });
+        $(".caption").mouseout(function(){
+          $(".caption").css("color", "#225ea9");
+        });
+
           // $(".box").css("background-color", "blue");
           $("#part1").click( function() {
             $(".part2").removeClass("active");
@@ -43,6 +50,12 @@
             $(".part5").removeClass("active");
             $(".part6").removeClass("active");
             $(".part1").addClass("active");
+            $("#part1").hide();
+            $("#part2").show();
+            $("#part3").show();
+            $("#part4").show();
+            $("#part5").show();
+            $("#part6").show();
             $(".caption").html( "Booked flight to Houston, packed and drove up to Orlando International Airport with our other friends to fly off to Houston. Also got this dope free car upgrade at the car rental center. Everything started off really well, or so we thought...");
             // $("#image").attr("src","images/car.JPG");
             $(".image").html('<img src="images/car.jpg" alt="car" id="image">');
@@ -55,6 +68,12 @@
             $(".part5").removeClass("active");
             $(".part6").removeClass("active");
             $(".part2").addClass("active");
+            $("#part2").hide();
+            $("#part1").show();
+            $("#part3").show();
+            $("#part4").show();
+            $("#part5").show();
+            $("#part6").show();
             $(".caption").html( "Gas was sold out everywhere and for the few places it was available there were massive lines. We were glad to be able to leave the State. A little later, I tried to check-in for our flight and I realized that I had booked it for the wrong dates.");
             $(".image").html('<img src="images/flight.jpg" alt="flight" id="image">');
           })
@@ -67,6 +86,12 @@
             $(".part5").removeClass("active");
             $(".part6").removeClass("active");
             $(".part3").addClass("active");
+            $("#part3").hide();
+            $("#part1").show();
+            $("#part2").show();
+            $("#part4").show();
+            $("#part5").show();
+            $("#part6").show();
             $(".caption").html( "Desperately tried looking for flights to literally anywhere that were reasonably affordable, but everything was sold out. We were freaking out and I told my mom and she reached out to a family friend that was living in Orlando and they kindly let us stay with her and her family.");
             $(".image").html('<img src="images/kids.jpg" alt="kids" id="image"><img src="images/erin.jpg" alt="erin" id="image">');
 
@@ -80,8 +105,14 @@
             $(".part5").removeClass("active");
             $(".part6").removeClass("active");
             $(".part4").addClass("active");
+            $("#part4").hide();
+            $("#part1").show();
+            $("#part2").show();
+            $("#part3").show();
+            $("#part5").show();
+            $("#part6").show();
             $(".caption").html( "Had to babysit their kids and also prepare for the hurricane. That included waking up early, making breakfast and entertaining the kids, as well as trips to Home Depot which was actually a crazy frenzy of desperate humans fighting for the plywood. We rode it out and lost power for a couple of days.");
-            $(".image").html('<img src="images/angels.jpg" alt="angels" id="image"><img src="images/erin.jpg" alt="erin" id="image">');
+            $(".image").html('<img src="images/homedepot.jpg" alt="homedepot" id="image">');
           })
 
           $("#part5").click( function() {
@@ -92,8 +123,14 @@
             $(".part4").removeClass("active");
             $(".part6").removeClass("active");
             $(".part5").addClass("active");
+            $("#part5").hide();
+            $("#part1").show();
+            $("#part2").show();
+            $("#part3").show();
+            $("#part4").show();
+            $("#part6").show();
             $(".caption").html( "Finally, things cleared up and we managed to take a bus back to Coral Springs where our roommates lived, and they didn't even loose power. We managed to find super cheap tickets to LA and booked them last minute as school was still cancelled and pretty much everything around us was closed.");
-            $("#image").attr("src","images/car.JPG");
+            $(".image").html('<img src="images/rainbow.jpg" alt="rainbow" id="image">');
           })
 
           $("#part6").click( function() {
@@ -104,9 +141,17 @@
             $(".part4").removeClass("active");
             $(".part5").removeClass("active");
             $(".part6").addClass("active");
+            $("#part6").hide();
+            $("#part1").show();
+            $("#part2").show();
+            $("#part3").show();
+            $("#part4").show();
+            $("#part5").show();
             $(".caption").html( "We had the best time in LA and San Diego! I guess in the end it all worked out? You can decide.");
-            $(".image").html('<img src="images/LA.jpg" alt="LA" id="image"><img src="images/ocean.jpg" alt="ocean" id="image"><img src="images/squad.jpg" alt="squad" id="image"><img src="images/squad2.jpg" alt="squad2" id="image">');
+            $(".image").html('<img src="images/collage.jpg" alt="collage" id="image">');
           })
+
+          // <img src="images/LA.jpg" alt="LA" id="image"><img src="images/aali.jpg" alt="aali" id="image"><img src="images/palmtrees.jpg" alt="palmtrees" id="image"><img src="images/ocean.jpg" alt="ocean" id="image"><img src="images/squad.jpg" alt="squad" id="image"><img src="images/squad2.jpg" alt="squad2" id="image">
 
         });
 
