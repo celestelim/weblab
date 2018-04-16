@@ -8,64 +8,57 @@
 <link rel="stylesheet" href="css/master.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
   </head>
   <body>
 
-    <ul id="menu">
+    <!-- <ul id="menu">
     		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
     		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
     		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
     		<li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
         <li data-menuanchor="page5"><a href="#page5">Page 5</a></li>
-    	</ul>
+    	</ul> -->
 
     <div id="pagepiling">
     	<div class="section" id="section1">
-        <h1>Los Angeles/ San Diego Vacation</h1>
+        <div class="pier">
+          <h1>LA VACATION SPOTS</h1>
+          <p>Take a couple of rides at the picturesque <a href="https://santamonicapier.org/">Santa Monica Pier</a>.</p>
+        </div>
       </div>
     	<div class="section" id="section2">
-        <div class="hollywood">
-          <h1>Testing</h1>
-          <p>Testinggggggg</p>
+        <div class="LACMA">
+          <h1>LACMA</h1>
+          <p>Feel like you're on set of a movie under the lights at the <a href="http://www.lacma.org/">Los Angeles County Museum of Art</a>.</p>
         </div>
       </div>
     	<div class="section" id="section3">
-        <div class="intro">
-          <h1>T</h1>
-          <p>askfhalskf</p>
+        <div class="hollywood">
+          <h1>HOLLYWOOD</h1>
+          <p>Hike to the back of the <a href="https://youtu.be/rYOwV1CI9_g">Hollywood Sign</a>.</p>
         </div>
       </div>
       <div class="section" id="section4">
-        <div class="intro">
-          <h1>T</h1>
-          <p>askfhalskf</p>
+        <div class="venice">
+          <h1>VENICE BEACH</h1>
+          <p>Hang out at <a href="http://www.venicebeach.com/">Venice Beach</a>.</p>
         </div>
       </div>
       <div class="section" id="section5">
-        <div class="intro">
-          <h1>T</h1>
-          <p>askfhalskf</p>
+        <div class="PCH">
+          <h1>PACIFIC COAST HIGHWAY</h1>
+          <p>Cruise along <a href="http://www.visitcalifornia.com/trip/pacific-coast-highway-south">PCH</a> and stop by one of the many beautiful beach coves.</p>
         </div>
       </div>
     </div>
 
 
   <script type="text/javascript" src="js/pagepile/jquery.pagepiling.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+  	$('#pagepiling').pagepiling();
+  });
+    </script>
 
-
-<script type="text/javascript">
-$(document).ready(function() {
-$('#pagepiling').pagepiling();
-// menu: '#menu',
-// 	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-// 	    		navigation: {
-// 		            'textColor': '#f2f2f2',
-// 		            'bulletsColor': '#ccc',
-// 		            'position': 'right',
-// 		            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
-});
-
-</script>
   </body>
 </html>

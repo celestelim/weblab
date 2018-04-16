@@ -1,15 +1,48 @@
-#section1 {
+h1{
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+letter-spacing: 10px;
+font-size: 64px;
+color: #fff;
+margin:0;
+padding:0;
+}
+
+.section{
+text-align:center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+background-size: cover;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fff;
+  margin:0;
+  padding:0;
+}
+
+
+#section1{
   background-size: cover;
   background-image: url(../images/pier.jpg);
 }
 
-#section2 {
+#section2{
   background-size: cover;
   background-image: url(../images/lights.jpg);
   padding: 6% 0 0 0;
 }
 
-#section3 {
+#section3{
   background-size: cover;
   background-image: url(../images/hollywood.jpg);
   padding: 6% 0 0 0;
@@ -26,43 +59,6 @@
   background-image: url(../images/waves.jpg);
 }
 
-/* Style for our header texts
-* --------------------------------------- */
-h1{
-font-size: 5em;
-font-family: arial,helvetica;
-color: #fff;
-margin:0;
-padding:0;
-}
-/* Centered texts in each section
-* --------------------------------------- */
-.section{
-text-align:center;
-}
-/* Backgrounds will cover all the section
-* --------------------------------------- */
-#section1,
-#section2,
-#section3{
-background-size: cover;
-}
-/* Defining each section background and styles
-* --------------------------------------- */
-#section1{
-background-image: url(imgs/bg1.jpg);
-}
-#section2{
-background-image: url(imgs/bg2.jpg);
-padding: 6% 0 0 0;
-}
-#section3{
-background-image: url(imgs/bg3.jpg);
-padding: 6% 0 0 0;
-}
-#section3 h1{
-color: #000;
-}
 #section1 h1{
 position: absolute;
 left: 0;
@@ -70,23 +66,62 @@ right: 0;
 margin: 0 auto;
 top: 30px;
 color: #fff;
+text-shadow: 1px 5px 20px #000;
 }
-#section2 .intro{
+
+#section1 p{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 130px;
+  color: #fff;
+  text-shadow: 1px 5px 20px #000;
+}
+
+#section2 .LACMA{
 position: absolute;
 left: 0;
 right: 0;
 margin: 0 auto;
 top: 30px;
-}
-#section2 h1,
-#section2 p{
 text-shadow: 1px 5px 20px #000;
 }
-#section3 h1,
-#section3 p{
+
+#section3 .hollywood{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
 text-shadow: 1px 5px 20px #000;
-color: #fff;
 }
-#infoMenu li a{
+
+#section4 .venice{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+#section5 .PCH{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+
+a {
+  background: none;
+  text-decoration: none;
   color: #fff;
+}
+
+a:hover{
+ color:grey;
 }
