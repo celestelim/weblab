@@ -5,7 +5,7 @@ letter-spacing: 10px;
 font-size: 64px;
 color: #fff;
 margin:0;
-padding:0;
+padding:20px;
 }
 
 .section{
@@ -145,4 +145,14 @@ a:hover{
     background: rgba(255,255,255, 0.5);
     -webkit-border-radius: 10px;
     border-radius: 10px;
+}
+
+ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fff;
+  margin:0;
+  padding:4px;
 }
