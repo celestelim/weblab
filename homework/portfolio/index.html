@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>pagePiling demo</title>
+
+    <link rel="stylesheet" type="text/css" href="js/pagepile/jquery.pagepiling.css" />
+    <link rel="stylesheet" href="css/master.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+      <script type="text/javascript" src="js/pagepile/jquery.pagepiling.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+      // 	$('#pagepiling').pagepiling({
+      //     navigation: true,
+      //     anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+      //     menu: '#menu'
+      //   });
+      // });
+
+      $('#pagepiling').pagepiling({
+
+          anchors: ['page1', 'page2', 'page3', 'page4'],
+          sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+          navigation: {
+            'position': 'right',
+            'tooltips': ['TRAVEL', 'PORTRAITS', 'FRIENDS', 'LANDSCAPE']
+          },
+          afterRender: function(){
+            $('#pp-nav').addClass('custom');
+          },
+          afterLoad: function(anchorLink, index){
+            if(index>1){
+              $('#pp-nav').removeClass('custom');
+            }else{
+              $('#pp-nav').addClass('custom');
+            }
+          }
+        });
+        	});
+        </script>
+  </head>
+
+  <body>
+
+    <div class="main-nav">
+      <ul id="menu">
+          <li  class="active"><a href="index.html">CELESTE LIM</a></li>
+          <li ><a href="portfolio.html">PORTFOLIO</a></li>
+          <li ><a href="about.html">ABOUT</a></li>
+          <li ><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div id="pagepiling">
+    	<div class="section" id="section1">
+        <div class="travel">
+          <h1>TRAVEL</h1>
+          <p>text here</p>
+        </div>
+      </div>
+    	<div class="section" id="section2">
+        <div class="portraits">
+          <h1>PORTRAITS</h1>
+          <p>text here</p>
+        </div>
+      </div>
+    	<div class="section" id="section3">
+        <div class="friends">
+          <h1>FRIENDS</h1>
+          <p>text here</p>
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="landscape">
+          <h1>LANDSCAPE</h1>
+          <p>text here</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,158 @@
+h1{
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+letter-spacing: 10px;
+font-size: 64px;
+color: #fff;
+margin:0;
+padding:20px;
+}
+
+.section{
+text-align:center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+background-size: cover;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fff;
+  margin:0;
+  padding:0;
+}
+
+
+#section1{
+  background-size: cover;
+  background-image: url(../images/pier.jpg);
+}
+
+#section2{
+  background-size: cover;
+  background-image: url(../images/lights.jpg);
+  padding: 6% 0 0 0;
+}
+
+#section3{
+  background-size: cover;
+  background-image: url(../images/hollywood.jpg);
+  padding: 6% 0 0 0;
+}
+
+#section4 {
+  background-size: cover;
+  background-image: url(../images/venice.jpg);
+  padding: 6% 0 0 0;
+}
+
+#section5 {
+  background-size: cover;
+  background-image: url(../images/waves.jpg);
+}
+
+#section1 h1{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+color: #fff;
+text-shadow: 1px 5px 20px #000;
+}
+
+#section1 p{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 130px;
+  color: #fff;
+  text-shadow: 1px 5px 20px #000;
+}
+
+#section2 .LACMA{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+#section3 .hollywood{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+#section4 .venice{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+#section5 .PCH{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: 30px;
+text-shadow: 1px 5px 20px #000;
+}
+
+
+a {
+  background: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+ color:grey;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: black;
+    background: #000;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: grey;
+  margin:0;
+  padding:4px;
+}
