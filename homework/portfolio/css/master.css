@@ -33,24 +33,24 @@ p {
 
 #section1{
   background-size: cover;
-  background-image: url(../images/pier.jpg);
+  background-image: url(../images/travel-train.jpg);
 }
 
 #section2{
   background-size: cover;
-  background-image: url(../images/lights.jpg);
+  background-image: url(../images/portrait-mushi.jpg);
   padding: 6% 0 0 0;
 }
 
 #section3{
   background-size: cover;
-  background-image: url(../images/hollywood.jpg);
+  background-image: url(../images/friends-happy.jpg);
   padding: 6% 0 0 0;
 }
 
 #section4 {
   background-size: cover;
-  background-image: url(../images/venice.jpg);
+  background-image: url(../images/landscape-miami.jpg);
   padding: 6% 0 0 0;
 }
 
