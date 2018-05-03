@@ -69,49 +69,40 @@ color: #fff;
 text-shadow: 1px 5px 20px #000;
 }
 
-#section1 p{
+#section1 .travel{
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 130px;
+  top: 50px;
   color: #fff;
   text-shadow: 1px 5px 20px #000;
 }
 
-#section2 .LACMA{
+#section2 .portraits{
 position: absolute;
 left: 0;
 right: 0;
 margin: 0 auto;
-top: 30px;
+top: 100px;
 text-shadow: 1px 5px 20px #000;
 }
 
-#section3 .hollywood{
+#section3 .friends{
 position: absolute;
 left: 0;
 right: 0;
 margin: 0 auto;
-top: 30px;
+top: 90px;
 text-shadow: 1px 5px 20px #000;
 }
 
-#section4 .venice{
+#section4 .landscape{
 position: absolute;
 left: 0;
 right: 0;
 margin: 0 auto;
-top: 30px;
-text-shadow: 1px 5px 20px #000;
-}
-
-#section5 .PCH{
-position: absolute;
-left: 0;
-right: 0;
-margin: 0 auto;
-top: 30px;
+top: 130px;
 text-shadow: 1px 5px 20px #000;
 }
 
@@ -119,7 +110,7 @@ text-shadow: 1px 5px 20px #000;
 a {
   background: none;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 a:hover{
@@ -293,19 +284,6 @@ ul li {
   padding: 32px;
   }
 
-.main-footer {
-  background-color: #ffdd99;
-  width: auto;
-  height: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  color: #404040;
-  padding-top: 5px;
-  text-align: center;
-}
-
 
 /* Portfolio page */
 
@@ -363,12 +341,6 @@ ul li {
 }
 
 .contact-info {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-}
-
-.instagram {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
