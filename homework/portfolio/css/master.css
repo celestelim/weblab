@@ -1,4 +1,4 @@
-h1{
+h2{
 font-family: 'Montserrat', sans-serif;
 font-weight: bold;
 letter-spacing: 10px;
@@ -59,7 +59,7 @@ p {
   background-image: url(../images/waves.jpg);
 }
 
-#section1 h1{
+#section1 h2{
 position: absolute;
 left: 0;
 right: 0;
@@ -217,33 +217,33 @@ ul li {
 }
 
 .bio-head {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 300px;
 }
 
 .bio-description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 300px;
 }
 
 .contact-head {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
 }
 
 .contact-info {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
 }
 
 .main-head {
   color: 	#404040;
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Lato', sans-serif;
   letter-spacing: 4px;
-  margin-bottom: 2px;
-  text-align: center;
+  margin-top: 100px;
   padding: 32px;
+  text-align: center;
 
 }
 
@@ -335,7 +335,6 @@ ul li {
       "main-nav"
       "main-head"
       "cover-pic"
-      "main-footer";
   }
 
   .column {
@@ -355,6 +354,22 @@ ul li {
   }
 }
 
-bio-description {
+.bio-description {
   color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+.contact-info {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.instagram {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
